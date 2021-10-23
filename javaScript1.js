@@ -1,5 +1,5 @@
-var num = 100
-function testScore(num){
+var grade = 100
+function testScore(num){ 
   if(num < 60 ){
       return "Grade F"
   }else if (num < 70 ){
@@ -12,9 +12,11 @@ function testScore(num){
       return "Grade A-"
   }else if(num ==95){
       return "Grade A"
-  }else if (num < 100){
+  }else if (num <= 100){
       return "Grade A+"
   }
-}
+  }
   
-console.log(testScore(89));
+  var theThingToLog = "Some dumb string";
+  theThingToLog = testScore(100);
+  console.log(theThingToLog);
